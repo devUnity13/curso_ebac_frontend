@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>exercicio_html_js</title>
+</head>
+
+<body>
+    <main id="container">
+        <h1>Valida Maior Que</h1>
+        <form id="myForm">
+            <label for="numero-a">Numero A</label>
+            <input type="number" id="numero-a" required />
+
+            <label for="numero-b">Numero B</label>
+            <input type="number" id="numero-b" required />
+            <p class="message-error">numero B: <b>2</b> é menor que o número A: <b>5</b></p>
+
+            <button id="btn-validar" type="submit">Validar</button>
+            <p class="message-success">numero B: <b>5</b> é maior que o número A: <b>2</b></p>
+        </form>
+    </main>
+    <script src="./main.js"></script>
+</body>
+
+</html>
