@@ -1,0 +1,44 @@
+@import "./medias.less";
+
+@media @tablet{
+    .container{
+        max-width: 80%;
+
+        h2{
+            text-align: center;
+        }
+    }
+
+    .products{
+        max-width: 80%;
+        margin: 16px auto;
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+
+        h4,p{
+            text-align: center;
+        }
+        
+    }
+}
+
+@media @mobile{
+    .container{
+        h2{
+            text-align: center;
+        }
+    }
+    .products{
+        display: block;
+        max-width: 80%;
+        margin: 16px auto;
+
+        h4,p{
+            text-align: center;
+        }
+    }
+
+    .products-item{
+        margin-bottom: 32px;
+    }
+}
