@@ -16,6 +16,20 @@ li{
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+
+    .branding img{
+        width: 50px;
+    }
+
+    .branding{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        h2{
+            color: #fff;
+        }
+    }
 }
 
 header{
@@ -48,4 +62,40 @@ header{
 
 section {
     padding: 56px 0;
+}
+
+#icons{
+    .container{
+        background-color: transparent;
+        max-width: 320px;
+        padding: 16px;
+
+        .sociais{
+            h2{
+                text-align: center;
+                padding-bottom: 32px;
+            }
+        }
+
+        .menu-sociais{
+            display: flex;
+            justify-content: space-between;
+
+            &-item img{
+                transition: all .2s ease;
+                background-color: @corFundoIcone;
+                padding: 8px;
+                border: 1px solid @corBordaIcone;
+                border-radius: 5%;
+                cursor: pointer;
+                border-bottom: 2px solid @corUnderlineIcone;
+            }
+
+            &-item img:hover{
+                transform: scale(1.4);
+                background-color: @corBordaIcone;
+                border-bottom: 2px solid @corPrimaria
+            }
+        }
+    }
 }
